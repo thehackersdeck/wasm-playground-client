@@ -1,6 +1,8 @@
 ## WEBASSEMBLY PLAYGROUND
 ![UI](media/wasm-playground.png)
 
+Mockup design is [here](https://www.figma.com/file/f59pb6stBuVTJLYulS3n5i9x/wasm-playground?node-id=0%3A1)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
