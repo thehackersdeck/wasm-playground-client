@@ -1,0 +1,24 @@
+// Partials
+@import 'partials/main';
+
+// Mixins
+@import 'modules/mixins';
+
+//============
+// Components
+//============
+
+// Action Bar
+@import 'components/action_bar';
+
+// Side bar
+@import 'components/sidebar';
+
+// Editor
+@import 'components/editor';
+
+// Panels
+@import 'components/panels';
+
+// Status Bar
+@import 'components/status_bar';
