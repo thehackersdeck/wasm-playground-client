@@ -1,0 +1,9 @@
+.wa-playground-action-bar {
+    grid-column: span 12;
+    background: $wa-action-bar-bg;
+    color: $text-white;
+    font-weight: $font-weight-bold;
+    border-bottom: 2px outset $wa-action-bar-shadow;
+    box-shadow: 0px 2px 2px $wa-action-bar-shadow;
+    padding: 5px;
+}

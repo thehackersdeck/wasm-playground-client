@@ -1,3 +1,5 @@
+@import 'variables';
+
 html,
 body {
     height: 100%;
@@ -11,4 +13,15 @@ body {
         sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.wa-playground {
+    height: 100%;
+
+    &-container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 30px 1fr 30px;
+        height: 100%;
+    }
 }

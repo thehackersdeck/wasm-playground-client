@@ -1,0 +1,8 @@
+.wa-playground-side-bar {
+    grid-column: span 2;
+    background: $wa-side-bar-bg;
+    color: $text-white;
+    font-weight: $font-weight-bold;
+    border-right: 1px solid $wa-status-bar-border-color;
+    padding: 10px;
+}

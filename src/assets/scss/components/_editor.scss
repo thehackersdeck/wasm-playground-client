@@ -1,0 +1,12 @@
+.wa-playground-editor {
+    grid-column: span 10;
+    position: relative;
+    background: $wa-editor-bg;
+    color: $text-white;
+    font-weight: $font-weight-bold;
+    width: 100%;
+}
+
+.wa-playground-code-editor {
+    padding: 10px;
+}
