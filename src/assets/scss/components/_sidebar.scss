@@ -1,8 +1,51 @@
 .wa-playground-side-bar {
-    grid-column: span 2;
-    background: $wa-side-bar-bg;
-    color: $text-white;
-    font-weight: $font-weight-bold;
-    border-right: 1px solid $wa-status-bar-border-color;
-    padding: 10px;
+  grid-column: span 2;
+  background: $wa-side-bar-bg;
+  color: $text-white;
+  font-weight: $font-weight-light;
+  border-right: 1px solid $wa-status-bar-border-color;
+  font-family: "Roboto-Medium";
+  color: $text-primary;
+}
+
+.sidebar-directory {
+  .folder {
+    padding: 6px 10px 6px 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    .folder-icon {
+      height: 15px;
+    }
+
+    .folder-name {
+      margin-left: 10px;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+    &:hover {
+      background: $wa-highlight-bg;
+    }
+  }
+}
+
+.sidebar-file {
+  .file {
+    padding: 3px 10px 3px 30px;
+    cursor: pointer;
+
+    .file-icon {
+      height: 15px;
+    }
+    .filename {
+      margin-left: 15px;
+    }
+
+    &:hover,
+    &.active {
+      background: $wa-highlight-bg;
+    }
+  }
 }
