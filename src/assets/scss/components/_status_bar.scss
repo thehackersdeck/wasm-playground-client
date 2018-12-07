@@ -1,7 +1,25 @@
 .wa-playground-status-bar {
     grid-column: span 12;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     background: $wa-status-bar-bg;
-    color: $text-white;
-    font-weight: $font-weight-bold;
-    padding: 5px;
+    color: $text-primary;
+    font-weight: $font-weight-regular;
+    font-size: 13px;
+    padding-right: 15px;
+}
+
+.wa-status-bar-item {
+    padding: 0 15px 0 15px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+        background: $wa-default-bg;
+        font-weight: $font-weight-bold;
+        color: $text-white;
+    }
 }
