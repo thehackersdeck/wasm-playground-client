@@ -5,6 +5,10 @@ import Terminal from "../components/Terminal";
 import Problems from "../components/Problems";
 import Debug from "../components/Debug";
 
+// Icons
+import arrowUpIcon from '../assets/images/arrow-up.svg';
+import arrowDownIcon from '../assets/images/arrow-down.svg';
+
 /**
  * Panel Container Component
  *
@@ -12,9 +16,30 @@ import Debug from "../components/Debug";
  * @return {React.Component}
  */
 class Panel extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isMinimized: true
+    };
+  }
+  
+  handleTogglePanel = () => {
+    this.setState({
+      isMinimized: ! this.state.isMinimized
+    });
+  }
+
+  renderToggleButton = () => {
+    if (this.state.isMinimized) {
+      return <img src={arrowUpIcon} alt="Maximize Panel" />;
+    }
+
+    return <img src={arrowDownIcon} alt="Minimize Panel" />;
+  }
+
   render() {
     return (
-      <div className="wa-playground-panel">
+      <div className={`wa-playground-panel ${this.state.isMinimized && 'wa-playground-panel--minimized'}`}>
         <PanelTabs>
           <div label="PROBLEMS">
             <Problems />
@@ -29,6 +54,9 @@ class Panel extends Component {
             <Terminal />
           </div>
         </PanelTabs>
+        <div className="wa-toggle-panel" onClick={this.handleTogglePanel}>
+            {this.renderToggleButton()}
+        </div>
       </div>
     );
   }

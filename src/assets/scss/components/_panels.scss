@@ -13,6 +13,14 @@
   border-top: 1px solid $wa-status-bar-border-color;
   font-family: "Roboto-Regular";
   font-weight: $font-weight-bold;
+
+  &--minimized {
+    height: $wa-panels-minimized-height;
+
+    .panel-body {
+      display: none;
+    }
+  }
 }
 
 .panel-tab-list {
@@ -34,4 +42,11 @@
 
 .panel-body {
   padding: 10px;
+}
+
+.wa-toggle-panel {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  cursor: pointer; 
 }
