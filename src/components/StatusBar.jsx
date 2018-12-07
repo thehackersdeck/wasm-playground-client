@@ -6,9 +6,9 @@ import React from 'react';
  * @param {undefined}
  * @return {React.Component}
  */
-const StatusBar = () => (
+const StatusBar = (props) => (
     <div className="wa-playground-status-bar">
-        <span>Status Bar</span>
+        <React.Fragment>{props.children}</React.Fragment>
     </div>
 );
 
