@@ -24,17 +24,7 @@ class Playground extends Component {
                 <ActionBar />
                 <SideBar />
                 <Editor />
-                <StatusBar>
-                    <div class="wa-status-bar-item">
-                        <span>Ln 30, Col 44</span>
-                    </div>
-                    <div class="wa-status-bar-item">
-                        <span>C/C++</span>
-                    </div>
-                    <div class="wa-status-bar-item">
-                        <span>Spaces: 4</span>
-                    </div>
-                </StatusBar>
+                <StatusBar />
             </div>
         );
     }
