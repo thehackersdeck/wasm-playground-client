@@ -1,0 +1,15 @@
+.wa-panel-terminal {
+  font-size: 13px;
+  font-weight: $font-weight-regular;
+  font-family: "Courier New", Courier, monospace;
+
+  .terminal-input {
+    color: #ffffff;
+  }
+
+  .terminal-response {
+    span {
+      margin: 0 5px;
+    }
+  }
+}

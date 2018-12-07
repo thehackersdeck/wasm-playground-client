@@ -1,16 +1,37 @@
-@import 'panels/console';
-@import 'panels/outputs';
-@import 'panels/problems';
-@import 'panels/terminal';
+@import "panels/console";
+@import "panels/outputs";
+@import "panels/problems";
+@import "panels/terminal";
 
 .wa-playground-panel {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: $wa-panels-height;
-    color: $text-white;
-    border-top: 1px solid $wa-status-bar-border-color;
-    padding: 10px;
-    font-weight: $font-weight-bold;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: $wa-panels-height;
+  color: $text-primary;
+  border-top: 1px solid $wa-status-bar-border-color;
+  font-family: "Roboto-Regular";
+  font-weight: $font-weight-bold;
+}
+
+.panel-tab-list {
+  display: flex;
+
+  .tab-list-item {
+    padding: 10px 20px;
+    line-height: normal;
+    font-size: 12px;
+    cursor: pointer;
+
+    &:hover,
+    &.active {
+      background: $wa-highlight-bg;
+      color: #ffffff;
+    }
+  }
+}
+
+.panel-body {
+  padding: 10px;
 }
