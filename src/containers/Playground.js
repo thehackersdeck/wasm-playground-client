@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ActionBar from '../components/ActionBar';
 import SideBar from '../components/SideBar';
 import StatusBar from '../components/StatusBar';
-import Editor from './Editor';
+import ContentArea from './ContentArea';
 
 /**
  * Playground Container Component
@@ -23,7 +23,7 @@ class Playground extends Component {
             <div className="wa-playground-container">
                 <ActionBar />
                 <SideBar />
-                <Editor />
+                <ContentArea />
                 <StatusBar />
             </div>
         );

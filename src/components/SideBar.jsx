@@ -1,6 +1,6 @@
 import React from "react";
-import Directory from "./directory";
-import File from "./file";
+import Directory from "./Directory";
+import File from "./File";
 
 /**
  * Presentational component for the side bar

@@ -4,15 +4,17 @@
 @import "panels/terminal";
 
 .wa-playground-panel {
+  height: $wa-panels-height;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  height: $wa-panels-height;
   color: $text-primary;
   border-top: 1px solid $wa-status-bar-border-color;
   font-family: "Roboto-Regular";
   font-weight: $font-weight-bold;
+  z-index: 999999;
+  background: $wa-default-bg;
 
   &--minimized {
     height: $wa-panels-minimized-height;
@@ -21,6 +23,7 @@
       display: none;
     }
   }
+
 }
 
 .panel-tab-list {

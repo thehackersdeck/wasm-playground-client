@@ -7,7 +7,7 @@ import React from 'react';
  * @return {React.Component}
  */
 const LineNumberStatus = () => (
-    <div class="wa-status-bar-item">
+    <div className="wa-status-bar-item">
         <span>Ln 30, Col 44</span>
     </div>  
 );

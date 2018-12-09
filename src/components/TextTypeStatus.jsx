@@ -7,7 +7,7 @@ import React from 'react';
  * @return {React.Component}
  */
 const TextTypeStatus = () => (
-    <div class="wa-status-bar-item">
+    <div className="wa-status-bar-item">
         <span>C/C++</span>
     </div>  
 );

@@ -7,7 +7,7 @@ import React from 'react';
  * @return {React.Component}
  */
 const indentationStatus = () => (
-    <div class="wa-status-bar-item">
+    <div className="wa-status-bar-item">
         <span>Spaces: 4</span>
     </div>  
 );

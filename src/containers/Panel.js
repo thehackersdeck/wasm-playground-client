@@ -19,18 +19,12 @@ class Panel extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isMinimized: true
+      
     };
   }
-  
-  handleTogglePanel = () => {
-    this.setState({
-      isMinimized: ! this.state.isMinimized
-    });
-  }
 
-  renderToggleButton = () => {
-    if (this.state.isMinimized) {
+  renderToggleButton = (isMinimized) => {
+    if (isMinimized) {
       return <img src={arrowUpIcon} alt="Maximize Panel" />;
     }
 
@@ -38,8 +32,10 @@ class Panel extends Component {
   }
 
   render() {
+    const { onClick, isMinimized } = this.props;
+
     return (
-      <div className={`wa-playground-panel ${this.state.isMinimized && 'wa-playground-panel--minimized'}`}>
+      <div className={`wa-playground-panel ${isMinimized ? 'wa-playground-panel--minimized' : ''}`}>
         <PanelTabs>
           <div label="PROBLEMS">
             <Problems />
@@ -54,8 +50,8 @@ class Panel extends Component {
             <Terminal />
           </div>
         </PanelTabs>
-        <div className="wa-toggle-panel" onClick={this.handleTogglePanel}>
-            {this.renderToggleButton()}
+        <div className="wa-toggle-panel" onClick={onClick}>
+            {this.renderToggleButton(isMinimized)}
         </div>
       </div>
     );
